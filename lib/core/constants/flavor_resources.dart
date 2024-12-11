@@ -4,7 +4,7 @@ class FlavorResources {
   static const String productionBaseUrl = 'http://production.flavor.com/api/';
 
   ///! Package Name
-  static const String stagingPackageName = 'com.example.learnFlavors.stg';
+  static const String stagingPackageName = 'com.example.flutter_flavors.stg';
 
   ///! Google Client Id
   static const String stagingGoogleClientId = '';

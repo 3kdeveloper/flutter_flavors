@@ -10,10 +10,13 @@ class HomeView extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(
-          locator<Utils>().isProduction() ? 'Production' : 'Staging',
-        ),
+        title: Text(locator<Utils>().isProduction() ? 'Production' : 'Staging'),
         centerTitle: true,
+      ),
+      body: Center(
+        child: Text(
+          'You are on ${locator<Utils>().isProduction() ? 'Production' : 'Staging'}',
+        ),
       ),
     );
   }
